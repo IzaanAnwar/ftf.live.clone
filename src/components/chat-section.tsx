@@ -7,14 +7,14 @@ export default function Chat({}: {}) {
   return (
     <main className=" bg-card ">
       <GendeDetails />
+      <StartChatContainer />
       <Draggable>
         <div
-          className={`fixed w-full cursor-move rounded-md  bg-background md:m-2 md:h-72 md:w-96 `}
+          className={`fixed h-72 w-full cursor-move rounded-md  bg-background md:m-2 md:h-72 md:w-96 `}
         >
           <video src="#" className="h-full w-full object-cover"></video>
         </div>
       </Draggable>
-      {/* <StartChatContainer /> */}
     </main>
   );
 }
@@ -49,25 +49,27 @@ export const GendeDetails = () => {
 
 export const StartChatContainer = () => {
   return (
-    <div className="mx-auto my-2 flex max-w-fit items-center justify-center shadow-2xl">
-      <div className="m-1 rounded-md border border-zinc-800 bg-zinc-900 p-2">
-        <Button
-          size="lg"
-          className="rounded-lg border px-20 py-6 hover:bg-secondary"
-        >
-          <Link href="#" className="px-2">
-            All Genders
-          </Link>
-          <ArrowUpIcon />
-        </Button>
-      </div>
-      <div className="m-1 rounded-md border border-zinc-800 bg-zinc-900 p-2">
-        <Button size="lg" className="bg-card px-24 py-6  hover:bg-card">
-          <Link href="/chat" className="px-2">
-            START
-          </Link>
-          <ArrowRightIcon />
-        </Button>
+    <div className="">
+      <div className=" my-2 flex max-w-fit items-center justify-center shadow-2xl md:mx-auto">
+        <div className="m-1 rounded-md border border-zinc-800 bg-zinc-900 p-2">
+          <Button
+            size="lg"
+            className="rounded-lg border hover:bg-secondary md:px-20 md:py-6"
+          >
+            <Link href="#" className="px-2">
+              All Genders
+            </Link>
+            <ArrowUpIcon />
+          </Button>
+        </div>
+        <div className="m-1 rounded-md border border-zinc-800 bg-zinc-900 p-2">
+          <Button size="lg" className="bg-card hover:bg-card md:px-24  md:py-6">
+            <Link href="/chat" className="px-2">
+              START
+            </Link>
+            <ArrowRightIcon />
+          </Button>
+        </div>
       </div>
     </div>
   );
