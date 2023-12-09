@@ -23,21 +23,21 @@ export const GendeDetails = () => {
   return (
     <>
       <div className="flex items-center justify-center ">
-        <div className="flex w-screen items-center justify-between rounded-md border border-zinc-800 bg-zinc-900 shadow-2xl md:w-fit md:px-8 md:py-8">
-          <div className="flex items-center justify-center px-8">
-            <span className="max-w-8 md:max-w-16 flex items-center justify-between rounded-md bg-card px-6 py-1 text-xs text-foreground ">
+        <div className="flex w-screen items-center justify-between rounded-md border border-zinc-800 bg-zinc-900 py-4 shadow-2xl md:w-fit md:px-16 md:py-8">
+          <div className="flex items-center justify-center md:px-8 ">
+            <span className=" flex items-center justify-between rounded-md bg-card  px-2 py-1 text-xs text-foreground ">
               <MaleIcon /> <h5 className="px-2">Male</h5>
             </span>
           </div>
-          <span className="border py-8"></span>
-          <div className="flex items-center justify-center px-8">
-            <span className="max-w-16 flex items-center justify-between rounded-md bg-card px-6 py-1 text-xs text-foreground ">
+          <span className="border py-4  md:py-8"></span>
+          <div className="flex items-center justify-center md:px-8">
+            <span className=" flex items-center justify-between rounded-md bg-card   px-2 py-1 text-xs text-foreground ">
               <FemaleIcon /> <h5 className="px-2">Female</h5>
             </span>
           </div>
-          <span className="border   py-8"></span>
-          <div className="flex items-center justify-center px-8">
-            <span className="max-w-16 flex items-center justify-between rounded-md bg-card px-6 py-1 text-xs  text-foreground ">
+          <span className="border py-4 md:py-8"></span>
+          <div className="flex items-center justify-center  md:px-8">
+            <span className="flex items-center justify-between rounded-md bg-card  px-2 py-1 text-xs  text-foreground ">
               <UserIcon /> <h5 className="px-2">User</h5>
             </span>
           </div>
