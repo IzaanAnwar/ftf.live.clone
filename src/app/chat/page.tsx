@@ -30,7 +30,7 @@ export default function ChatPage() {
         <ScrollArea className="h-[70vh] w-full rounded-md bg-card">
           {MOCK_MESSAGES.map((msg, index) => {
             return (
-              <span className="my-2 flex items-end justify-end">
+              <span key={index} className="my-2 flex items-end justify-end">
                 <div className="flex w-fit rounded-full bg-accent px-4 py-1">
                   <p>{msg.message}</p>
                 </div>
