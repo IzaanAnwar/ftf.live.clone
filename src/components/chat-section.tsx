@@ -3,19 +3,15 @@ import Draggable from 'react-draggable';
 import { Button } from './ui/button';
 import Link from 'next/link';
 import { ArrowRightIcon, ArrowUpIcon } from '@radix-ui/react-icons';
-export default function Chat({}: {}) {
+export function Chat({}: {}) {
   return (
-    <main className=" bg-card ">
-      <GendeDetails />
-      <StartChatContainer />
-      <Draggable>
-        <div
-          className={`fixed h-72 w-full cursor-move rounded-md  bg-background md:m-2 md:h-72 md:w-96 `}
-        >
-          <video src="#" className="h-full w-full object-cover"></video>
-        </div>
-      </Draggable>
-    </main>
+    <Draggable>
+      <div
+        className={`fixed h-72 w-full cursor-move rounded-md  bg-background md:m-2 md:h-72 md:w-96 `}
+      >
+        <video src="#" className="h-full w-full object-cover"></video>
+      </div>
+    </Draggable>
   );
 }
 
